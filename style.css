@@ -1,0 +1,72 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    background-image: url(seinao2.png);
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border: 1px;
+    font-family: "Montserrat", sans-serif;
+    
+}
+.dados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50rem;
+    height: 15rem;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-image: url(moedinha.png); 
+    backdrop-filter: blur(100px);
+    
+    
+    
+}
+
+
+.print {
+    display: none;
+    margin: 10x;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 30px;
+    width: 600px; 
+}
+
+.print h1 {
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+}
+
+.print h2 {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.assinatura {
+    border-top: 1px solid black;
+    text-align: center;
+}
+
+@media print {
+    .print {
+        display: block;
+    }
+
+    .dados {
+        display: none;
+    }
+}
